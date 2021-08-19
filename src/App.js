@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import Header from "../src/components/Header/index";
-import { BrowserRouter, Route, Switch, Redirect, Link } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import "./App.scss";
 import NotFound from "./components/NotFound";
 
@@ -15,8 +15,8 @@ function App() {
           <Header />
 
           <Switch>
-            <Redirect exact from="/" to="/photo" />
-            <Route path="/photo" component={Photo} />
+            <Redirect exact from="/" to="/photos" />
+            <Route path="/photos" component={Photo} />
             <Route component={NotFound} />
           </Switch>
         </BrowserRouter>
