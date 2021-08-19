@@ -1,8 +1,8 @@
 import React from "react";
-import Banner from "../../../../components/Banner/index";
-import Images from "../../../../../src/constants/images";
 import { Container } from "reactstrap";
 import { Link } from "react-router-dom";
+import Banner from "components/Banner";
+import Images from "constants/images";
 
 function MainPage(props) {
   return (
